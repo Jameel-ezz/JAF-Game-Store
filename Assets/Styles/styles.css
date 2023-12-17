@@ -1,0 +1,75 @@
+/* General Styles */
+
+/* Set body margin, font family, and background image */
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: url("https://wallpapers.com/images/hd/4k-gaming-background-bud9k5ffqi3r2ds9.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Apply box-sizing, reset margin, and add transition for all elements */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Clearfix for floated elements */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Define custom color variables using CSS variables */
+:root {
+  --primary-color: #010712;
+  --secondary-color: #818386;
+  --bg-color: #FCFDFD;
+  --button-color: #3B3636;
+  --h1-color: #3F444C;
+}
+
+/* Dark theme styles using CSS variables */
+[data-theme="dark"] {
+  --primary-color: #FCFDFD;
+  --secondary-color: #818386;
+  --bg-color: #010712;
+  --button-color: #818386;
+  --h1-color: #FCFDFD;
+}
+
+/* Logo styles */
+.logo {
+  width: 10rem;
+  padding: 1.5rem;
+}
+
+/* Paragraph styles */
+p {
+  color: var(--secondary-color);
+  font-size: 0.9rem;
+  letter-spacing: 0.01rem;
+  width: 40vw;
+  margin: 0.25rem 0;
+}
+
+/* Button styles */
+button {
+  text-transform: uppercase;
+  font-weight: 300;
+  background: var(--button-color);
+  color: var(--bg-color);
+  width: 10rem;
+  height: 2.25rem;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Button styles on active state */
+button:active {
+  opacity: 0.8;
+}

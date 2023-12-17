@@ -1,0 +1,48 @@
+.imgContainer
+{
+    padding: 15px 15px;
+}
+
+
+/* Styles for images inside the "gamesection" div */
+div.gamesection img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Styles for responsive images with a hover effect */
+.responsive {
+    padding: 7px 7px;
+    float: left;
+    width: 25%;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect styles for responsive images */
+.responsive:hover {
+    transition: transform 0.1s ease-in-out;
+    transform: scale(1.05);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    filter: brightness(1.2);
+    outline: 20px solid transparent;
+    transition: .5s ease;
+}
+
+/* Media query for screens with a maximum width of 700px */
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+/* Media query for screens with a maximum width of 500px */
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}

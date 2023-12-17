@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="Assets/Styles/styles.css">
+  <link rel="stylesheet" href="Assets/Styles/Contact.css">
+
+
+  <link rel="icon" type="image/x-icon" href="Assets/Images/JAF_icon.jpg">
+
+  <title>Contact Us</title>
+</head>
+
+<body>
+
+  <!-- Bootstrap navigation bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <!-- Navbar items and dropdown menu -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="Home.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Game
+          </a>
+          <!-- Dropdown menu items -->
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="https://www.crazygames.com/c/action">Action Games</a>
+            <a class="dropdown-item" href="https://www.crazygames.com/hot">Trending Games</a>
+            <a class="dropdown-item" href="https://www.crazygames.com/new">New games</a>
+            <a class="dropdown-item" href="https://www.crazygames.com/t/tower-defense">Tower Defense Games</a>
+          </div>
+        </li>
+        <!-- Active navigation item indicating the current page -->
+        <li class="nav-item active">
+          <a class="nav-link" href="AboutUs.html">About<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Footer section containing Contact form and Google Map -->
+  <footer>
+    <div class="Contact-container">
+      <!-- Right column containing theme switch, heading, description, and contact form -->
+      <div class="right-col">
+        <div class="theme-switch-wrapper">
+          <!-- Theme switch input -->
+          <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <!-- Slider for theme switch -->
+            <div class="slider round"></div>
+          </label>
+        </div>
+
+        <!-- Heading and description -->
+        <h1>Contact us</h1>
+        <p>What to know more about the popular game available contact us for more game or new games in the market</p>
+
+        <!-- Contact form -->
+        <form id="Contact-form" method="post">
+          <label for="name">Full name</label>
+          <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+          <label for="message">Message</label>
+          <textarea rows="6" placeholder="Your Message" id="message" name="message" required></textarea>
+          <button type="submit" id="submit" name="submit">Send</button>
+        </form>
+
+        <!-- Error and success messages -->
+        <div id="error"></div>
+        <div id="success-msg"></div>
+      </div>
+
+      <!-- Map section with embedded Google Map of Antalya Bilim University -->
+      <div class="Map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3184.2356482232826!2d30.618362075361905!3d37.051867253473546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c39abd6e49aa8d%3A0x329b9c7bc561e87a!2sAntalya%20Bilim%20University!5e0!3m2!1sen!2str!4v1702564116306!5m2!1sen!2str"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap and custom scripts -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <!-- Custom JavaScript -->
+  <script src="Assets/Scripts/scripts.js"></script>
+
+</body>
+
+</html>

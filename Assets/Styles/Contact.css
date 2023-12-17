@@ -1,0 +1,245 @@
+/* Reset default margin, set font family, and background properties for the entire document */
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: none;
+    background: var(--bg-color);
+    background-size: contain;
+}
+
+/* Apply box-sizing: initial to all elements */
+* {
+    box-sizing: initial;
+}
+
+/* Reset margin for body again */
+body {
+    margin: 0;
+}
+
+/* Styles for the main container */
+.Contact-container {
+    display: flex;
+    width: 100%;
+    /* background: var(--bg-color); */
+}
+
+/* Styles for the map container */
+.Map {
+    display: flex;
+    position: relative;
+    margin-top: 10%;
+    width: 100%;
+    height: auto;
+}
+
+/* Styles for the right column */
+.right-col {
+    display: grid;
+    margin-top: 5%;
+    margin-left: 5%;
+    background: var(--bg-color);
+    padding: 5rem 3.5rem;
+    width: 100%;
+}
+
+h1 {
+    color: var(--h1-color);
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    letter-spacing: 0.5rem;
+    font-weight: 300;
+    font-family: 'Jost', sans-serif;
+}
+
+/* Styles for various text elements */
+label, .description, p, input, textarea {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+}
+
+/* Styles for label and description */
+label,
+.description {
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    font-size: 0.625rem;
+}
+
+/* Styles for the form container */
+form {
+    width: 31.25rem;
+    position: relative;
+    margin-top: 2rem;
+    padding: 1rem 0;
+}
+
+/* Styles for textarea */
+textarea {
+    resize: none;
+}
+
+/* Styles for input and textarea */
+input,
+textarea {
+    width: 100%;
+    display: block;
+    color: var(--primary-color);
+    font-weight: 500;
+    background: var(--bg-color);
+    border: none;
+    border-bottom: 1px solid var(--secondary-color);
+    padding: 0.5rem 0;
+    margin-bottom: 1rem;
+    outline: none;
+}
+
+/* Styles for input and textarea placeholders */
+input::placeholder,
+textarea::placeholder {
+    color: var(--primary-color);
+}
+
+/* Styles for hover effect on input, textarea, and button */
+input:hover,
+textarea:hover,
+button:hover {
+    opacity: 0.5;
+}
+
+
+
+/* Styles for the theme switch wrapper */
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 160px;
+    position: absolute;
+    top: 15px;
+    right: 0%;
+}
+
+/* Styles for the theme switch container */
+.theme-switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+}
+
+/* Styles for the actual switch input */
+.theme-switch input {
+    display: none;
+}
+
+/* Styles for the slider */
+.slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+}
+
+/* Styles for the slider knob */
+.slider:before {
+    background-color: #fff;
+    bottom: 0.25rem;
+    content: "";
+    width: 26px;
+    height: 26px;
+    left: 0.25rem;
+    position: absolute;
+    transition: .4s;
+}
+
+/* Styles for checked state of the switch */
+input:checked+.slider {
+    background-color: var(--button-color);
+}
+
+/* Styles for checked state of the slider knob */
+input:checked+.slider:before {
+    transform: translateX(26px);
+}
+
+/* Styles for rounded slider and knob */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* Media query for smaller screens (max-width: 950px) */
+
+@media only screen and (max-width: 950px) {
+    .logo {
+        width: 8rem;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    p {
+        font-size: 0.7rem;
+    }
+
+    input,
+    textarea,
+    button {
+        font-size: 0.65rem;
+    }
+
+    .description {
+        font-size: 0.3rem;
+        margin-left: 0.4rem;
+    }
+
+    button {
+        width: 7rem;
+    }
+
+    .theme-switch-wrapper {
+        width: auto; /* Allow it to take full width on smaller screens */
+        right: 0; /* Reset right spacing */
+        justify-content: flex-end; /* Align items to the end of the container */
+        padding: 0 20px; /* Add padding for spacing */
+    }
+
+    .theme-switch {
+        height: 28px;
+        width: 50px;
+    }
+
+    .slider:before {
+        width: 20px;
+        height: 20px;
+        transform: translateX(16px);
+    }
+
+    .slider.round {
+        border-radius: 15px;
+    }
+
+    .slider.round:before {
+        border-radius: 50%;
+    }
+
+    /* Adjust layout for smaller screens */
+    .Contact-container {
+        flex-direction: column;
+        /* Stack elements vertically on smaller screens */
+    }
+
+    .right-col {
+        padding: 2rem;
+        /* Adjust padding for smaller screens */
+    }
+}

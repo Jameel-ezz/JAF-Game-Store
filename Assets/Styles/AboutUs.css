@@ -1,0 +1,88 @@
+/* Social Icons Container */
+.social-icons-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Individual Social Icon */
+.social-icon {
+    margin: 10px;
+    transition: transform 0.1s ease-in-out;
+}
+
+/* Social Icon Hover Effect */
+.social-icon:hover {
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+/* Text Blocks */
+.text-blk {
+    margin: 0;
+    padding: 0;
+    line-height: 25px;
+}
+
+.text-blk.heading {
+    font-size: 36px;
+    line-height: 45px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.text-blk.subHeading {
+    text-align: center;
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 60px;
+}
+
+/* Responsive Text Blocks */
+@media (max-width: 768px) {
+    .text-blk.heading {
+        font-size: 55px;
+        line-height: 65px;
+    }
+
+    .text-blk.subHeading {
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+
+/* Responsive Containers */
+.responsive-container-block {
+    min-height: 300px;
+    height: fit-content;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+/* Big Container Styles */
+.responsive-container-block.bigContainer {
+    padding: 10px 30px;
+    background: none;
+}
+
+/* Normal Container Styles */
+.responsive-container-block.Container {
+    max-width: 800px;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 150px auto;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* Responsive Styles for Small Screens */
+@media (max-width: 500px) {
+    .responsive-container-block.bigContainer {
+        padding: 10px 20px;
+    }
+}

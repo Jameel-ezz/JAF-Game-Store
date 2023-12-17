@@ -1,0 +1,19 @@
+{
+  "name": "gamewebdev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scripts.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "compass-mixins": "^0.12.12",
+    "node-sass": "^9.0.0"
+  }
+}
